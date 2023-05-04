@@ -16,8 +16,8 @@ function chkQuery() {
 
   console.log("id: " + id);
   console.log("pw: " + pw);
-  if (id == userId && pw == userPw && nick) {
-    alert("환영합니다!" + nick + " 님!");
+  if (id == userId && pw == userPw) {
+    alert("환영합니다!");
     return true;
   } else {
     history.go(-1);
