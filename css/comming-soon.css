@@ -117,6 +117,9 @@ a:visited {
 input {
   width: 190px;
 }
+form {
+  width: 100%;
+}
 button {
   background-color: cadetblue;
   border: none;
