@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="lib.js"></script>
+  </head>
+  <body>
+    <form method="GET" action="login_ok.html">
+      <input type="text" name="userid" />
+      <input type="text" name="userpwd" />
+      <input type="submit" value="로그인" />
+    </form>
+    <script>
+      let frm = document.forms[0];
+      let status = getParam("status");
+      let userId = getParam("chkId");
+      switch (status) {
+        case "1":
+          frm.elements[0].placeholder = "아이디 체크";
+          frm.elements[0].focus();
+          break;
+        case "2":
+          frm.elements[0].value = userId;
+          frm.elements[1].placeholder = "비번 체크";
+          frm.elements[1].focus();
+          break;
+        case "0":
+          let nick = getParam("nic");
+          frm.style.display = "none";
+          document.body.innerHTML = "<h1>" + nick + "님 환영합니다.</h1>";
+          break;
+        default:
+      }
+    </script>
+  </body>
+</html>

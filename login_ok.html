@@ -1,0 +1,17 @@
+<script src="lib.js"></script>
+<script>
+  let dbId = "tester";
+  let dbPwd = "8888";
+  let dbNic = "바보";
+
+  let userId = getParam("userid");
+  let userPwd = getParam("userpwd");
+
+  if (dbId != userId) {
+    location.href = "index.html?status=1";
+  } else if (dbPwd != userPwd) {
+    location.href = "index.html?status=2&chkId=" + userId;
+  } else {
+    location.href = "index.html?status=0&nic=" + dbNic;
+  }
+</script>
