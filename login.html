@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="login-form">
+        <form action="/index.html" method="GET" onsubmit="return chkLogin()">
+          <div id="input-container">
+            <div class="input-area">
+              <input
+                type="text"
+                name="id"
+                placeholder="ID"
+                class="input-info"
+                value="hong"
+              />
+            </div>
+            <div class="input-area">
+              <input
+                type="password"
+                name="pw"
+                placeholder="PW"
+                class="input-info"
+                value="1234"
+              />
+            </div>
+            <div class="button-container">
+              <button type="submit">Login</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/login.js"></script>
+  </body>
+</html>
