@@ -2,7 +2,6 @@ let centerText = document.querySelector("#center-text-container");
 let loginbtn = document.querySelector("#login-area");
 let userId = "hong";
 let userPw = "1234";
-let userNick = "홍길동";
 
 window.onload = function () {
   centerText.style.opacity = "1";
@@ -14,11 +13,10 @@ window.onload = function () {
 function chkQuery() {
   let id = getParam("id");
   let pw = getParam("pw");
-  let nick = getParam("nick");
 
   console.log("id: " + id);
   console.log("pw: " + pw);
-  if (id == userId && pw == userPw && nick == userNick) {
+  if (id == userId && pw == userPw && nick) {
     alert("환영합니다!" + nick + " 님!");
     return true;
   } else {
