@@ -1,0 +1,99 @@
+body,
+html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+* {
+  color: #fff;
+  font-weight: 200;
+  font-family: "Raleway", sans-serif;
+}
+#main-container {
+  width: 100%;
+  height: 100%;
+}
+#main-background {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/glen-jackson-u0Pt5XxuvBY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+#logo {
+  width: 6.94vw;
+  height: 70px;
+  font-size: 25px;
+  padding: 20px 1.38vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+#center-text-container {
+  width: 31.875vw;
+  height: 180px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -70%);
+  transition: 1s ease;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 415px; */
+}
+
+#big-text {
+  width: 100%;
+  height: 96px;
+  text-align: center;
+  line-height: 96px;
+  font-size: 64px !important;
+  margin: 10px 0 10px 0;
+  min-width: 455px;
+}
+
+#text-hiddenline {
+  width: 100%;
+  border-bottom: 1px solid transparent;
+}
+#text-whiteline {
+  width: 50%;
+  border-bottom: 1px solid #fff;
+  margin: 0 auto;
+}
+#small-text {
+  width: 100%;
+  height: 27px;
+  margin: 18px 0 18px 0;
+  text-align: center;
+  line-height: 27px;
+  font-size: 20px !important;
+  text-shadow: 0px 0px 2px #000;
+}
+#author-link {
+  width: 15vw;
+  height: 20px;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 14px 1.66vw;
+}
+
+a:link,
+a:visited {
+  color: #fff;
+}
