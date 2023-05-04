@@ -6,7 +6,15 @@ function chkLogin() {
   let idInputBox = document.forms[0].elements.id;
   let pwInputBox = document.forms[0].elements.pw;
 
-  let result = isEmpty(idInputBox, pwInputBox) ? true : false;
+  let result;
+  if (isEmpty(idInputBox, pwInputBox)) {
+    result = true;
+    document.forms[0].action =
+      "https://song5789.github.io/loginEx_230504/index.html?nick=홍길동";
+  } else {
+    result = false;
+  }
+
   return result;
 }
 
