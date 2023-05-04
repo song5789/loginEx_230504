@@ -40,7 +40,7 @@ function getParam(param) {
 function calcDay() {
   let currentTime = new Date().getTime();
   let dDay = new Date();
-  dDay.setFullYear(2023, 4, 6);
+  dDay.setFullYear(2023, 4, 5);
 
   return (dDay.getTime() - currentTime) / 1000 / 60 / 60 / 24;
 }
@@ -49,7 +49,7 @@ function showLeftTime() {
   let span = document.querySelector("#dayleft");
   let leftDay = calcDay();
 
-  span.innerText = `Children's Day ${leftDay} day left`;
+  span.innerText = `HoliDay's ${leftDay} day left`;
 }
 
 setInterval(showLeftTime(), 1000);

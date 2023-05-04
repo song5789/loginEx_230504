@@ -80,6 +80,14 @@ html {
   font-size: 20px !important;
   text-shadow: 0px 0px 2px #000;
 }
+
+#dayleft {
+  display: block;
+}
+#dayleft:hover {
+  background-color: #000;
+  opacity: 0.965;
+}
 #author-link {
   width: 15vw;
   height: 20px;
